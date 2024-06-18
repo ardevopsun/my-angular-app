@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
+                sh 'ng serve --host 0.0.0.0'  
             }
         }
         stage('Deliver') {
